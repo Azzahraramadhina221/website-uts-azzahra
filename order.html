@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Pemesanan Buku</title>
+    <link rel="icon" href="gambarku/favicon.jpg.png">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+<header class="site-header">
+<img src="gambarku/header.jpg.jpg" alt="Rak Buku">
+<div class="header text">
+<p class="eyebrow">Order</p>
+<h1>Sasa's Bookshelf</h1>
+</div>
+</header>
+
+<nav class="navigation" aria-label="Menu utama">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="contact.html">Contact</a>
+    <a href="video.html">Video</a>
+    <a href="order.html">Order</a>
+  </nav>
+
+  <div class="promo-bar">
+  <p class="promo-text">
+    Gratis Ongkir Khusus Untuk Wilayah Jabodetabek dan sekitarnya
+    + Nikmati Diskon 10% untuk Pelanggan Baru!
+  </p>
+</div>
+
+<main class="page-content">
+  <section class="page-intro">
+    <p class="eyebrow"><p class="section-description">
+                Pilih novel favoritmu, lalu isi informasi pemesanan,
+                dan jangan lupa periksa total harga sebelum mengirim pesanan yaa. </p>
+
+    <h1>Pemesanan Buku</h1>
+  </section>
+
+  <form class="site-form" id="order-form">
+  <div class="form-group">
+    <label for="nama">Nama lengkap</label>
+    <input id="nama" name="nama" type="text"
+           placeholder="Masukkan nama lengkap" required>
+  </div>
+
+  <div class="form-group">
+    <label for="email">Email</label>
+    <input id="email" name="email" type="email"
+           placeholder="nama@email.com" required>
+  </div>
+
+  <div class="form-group">
+    <label for="telepon">Nomor telepon</label>
+    <input id="telepon" name="telepon" type="tel"
+           placeholder="Contoh: 08123456789">
+  </div>
+
+  <div class="form-group">
+    <label for="book-select">Pilih Novel</label>
+    <select id="book-select" name="book" required>
+    <option value="">-- Pilih Novel --</option>
+    <option value="The Great Gatsby">The Great Gatsby — Rp47.000</option>
+    <option value="Moby Dick">Moby Dick — Rp45.000</option>
+    <option value="The Adventures of Tom Sawyer"> The Adventures of Tom Sawyer — Rp55.000</option>
+    <option value="The Scarlet Letter">The Scarlet Letter — Rp34.000</option>
+    <option value="The Grapes of Wrath">The Grapes of Wrath — Rp142.000</option>
+    /select>
+    </div>
+
+  <div class="form-group">
+    <label for="quantity">Jumlah Buku</label>
+    <input type="number" id="quantity"
+    name="quantity" min="1" max="99" value="1" required>
+    </div>
+
+  <div class="form-group">
+    <label for="alamat">Alamat pengiriman</label>
+    <textarea id="alamat" name="alamat" rows="4"
+    placeholder="Masukkan alamat lengkap pengiriman"></textarea>
+  </div>
+
+    <div class="form-group">
+                    <label for="payment">Metode Pembayaran</label>
+
+                    <select id="payment" name="payment" required>
+                        <option value="">-- Pilih Pembayaran --</option>
+                        <option value="Transfer Bank">Transfer Bank</option>
+                        <option value="E-Wallet">E-Wallet</option>
+                        <option value="COD">Cash on Delivery (COD)</option>
+                    </select>
+                </div>
+
+  <button type="submit">Pesan buku</button>
+</form>
+
+    <aside class="sidebar">
+<h2> Artikel lainnya</h2>
+<ul>
+    <li><a href="artikel-gatsby.html">The Great Gatsby</a></li>
+    <li><a href="artikel-mobydick.html">Moby Dick</a></li>
+    <li><a href="artikel-tomsawyer.html">The Adventures of Tom Sawyer</a></li>
+    <li><a href="artikel-scarlet.html">The Scarlet Letter</a></li>
+    <li><a href="artikel-grapes.html">The Grapes of Wrath</a></li>
+</ul>
+</aside>
+</main>
+
+<p><a href="index.html#rekomendasi">Kembali ke rekomendasi</a></p>
+</article>
+
+<footer>
+            <p> © 2026 Sasa's Bookshelf · Desain oleh Azzahra Ramadhina Salsabillah. 
+                All rights reserved.</p>
+        </footer>
+
+</body>
+</html>
